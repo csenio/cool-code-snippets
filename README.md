@@ -13,7 +13,7 @@ const breakpoints = {
 }
 
 for(i in breakpoints){
-  breakpoints[i]=`all and (max-width: ${i}px)`
+  breakpoints[i]=`all and (max-width: ${breakpoints[i]}px)`
 }
 
 export default breakpoints
