@@ -2,7 +2,7 @@
 
 ## css
 
-Easilly create and use media breakpoints in you arr like this:
+### Easy media breakpoints for css in js (credit to [zlobic](https://github.com/zlobic))
 ```
 const breakpoints = {
   mobile: 320,
