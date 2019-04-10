@@ -21,7 +21,7 @@ export default breakpoints
 Make a separate breakpoints.js file import it in your styles.js and use it in with styled components
 ```
 @media ${breakpoints.laptop}
-
+```
 ### Scroll to top when going to a new page with react router
      ```
      <Route path="/" component={scrollToTop} />
