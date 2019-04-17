@@ -31,3 +31,7 @@ Make a separate breakpoints.js file import it in your styles.js and use it in wi
      return null;
      };
      ```
+### reduce until array
+```
+const reduceUntil = (arr,index)=> arr.slice(0,3).reduce((acc,val)=>acc + val)
+```
