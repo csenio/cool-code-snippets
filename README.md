@@ -51,3 +51,34 @@ const images = importAll(
   require.context("./images", false, /\.(png|jpe?g|svg)$/)
 );
 ```
+
+### easy react portal for modals etc
+
+```
+import { useEffect, useState } from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+
+function Portal({ children }) {
+  const [defaultNode, setNode] = useState(null);
+
+  useEffect(() => {
+    setNode(document.createElement('div'));
+  }, []);
+
+  useEffect(() => {
+    if (defaultNode) document.body.appendChild(defaultNode);
+    return () => {
+      if (defaultNode) document.body.removeChild(defaultNode);
+    };
+  }, [defaultNode]);
+
+  return defaultNode ? ReactDOM.createPortal(children, defaultNode) : null;
+}
+
+Portal.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default Portal;
+```
