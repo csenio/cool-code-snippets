@@ -94,3 +94,29 @@ useMeasure() {
   return [{ ref }, bounds]
 }
 ```
+
+### quick date formater
+
+```
+export const parseDate = dateString => {
+  const monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
+  const formatedDate = new Date(dateString);
+  const month = monthNames[formatedDate.getMonth()];
+  const day = formatedDate.getDate();
+  const year = formatedDate.getFullYear();
+  return `${day} ${month} ${year}`;
+};
+```
