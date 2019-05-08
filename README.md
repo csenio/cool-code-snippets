@@ -1,4 +1,4 @@
-# cool-code-snippets
+# cool-code-snippets ✂
 
 ## css
 
