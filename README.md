@@ -2,6 +2,16 @@
 
 ## css
 
+### cool background images
+```
+width: 100%;
+height: 0;
+padding-top: 56%;
+background-image: url('..');
+background-size: cover;
+background-position: center
+```
+
 ### Easy media breakpoints for css in js (credit to [zlobic](https://github.com/zlobic))
 ```
 const breakpoints = {
