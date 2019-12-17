@@ -46,9 +46,9 @@ Make a separate breakpoints.js file import it in your styles.js and use it in wi
 const reduceUntil = (arr,index)=> arr.slice(0,3).reduce((acc,val)=>acc + val)
 ```
 
-### create an array from x ... n
+### create an array from _ to _
 ```
-Array.from(Array(n).keys()).map(n => n + x);
+Array.from(Array(to+1-from).keys()).map(n => n + from);
 ```
 
 ### get all images (or other files) from a folder (webpack)
